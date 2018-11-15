@@ -28,7 +28,11 @@ for linha in cursor.fetchall():
 for i in range(0,len(l)):
 	count = count + (l[i][1] - l[i][2])
 
+# Imprimindo a resposta
+print (count)
+
 # Fecha a conexão com BD
 conn.close()
 
-
+# Resposta
+#	154456202.42999995
