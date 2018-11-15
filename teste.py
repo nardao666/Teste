@@ -34,21 +34,11 @@ for i in range(0,len(list_country)):
 	cnt.append(l.count(a))
 
 # Escreve em um arquivo csv
-with open("saida1.csv", "w", newline='') as csvfile:
+with open("saida_1_1_1.csv", "w", newline='') as csvfile:
 	c =csv.writer(csvfile, delimiter=',', quoting = csv.QUOTE_MINIMAL)
 	c.writerow(["Pais","qtd_projetos"])
 	for i in range(0,len(list_country)):
 		c.writerow([list_country[i],cnt[i]])
-	
-# Imprimindo a resposta
-for i in range(0,len(list_cat)):
-	print (	list_cat[i], list_pled[i])
 
 # Fecha a conexão com BD
 conn.close()
-
-# Resposta em ordem cresencete
-#
-#	Photography 13776535.278375827
-#	Webseries 17754841.20121909
-#	Indie Rock 18869296.158468843
