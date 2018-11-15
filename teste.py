@@ -39,6 +39,16 @@ with open("saida1.csv", "w", newline='') as csvfile:
 	c.writerow(["Pais","qtd_projetos"])
 	for i in range(0,len(list_country)):
 		c.writerow([list_country[i],cnt[i]])
+	
+# Imprimindo a resposta
+for i in range(0,len(list_cat)):
+	print (	list_cat[i], list_pled[i])
 
 # Fecha a conexão com BD
 conn.close()
+
+# Resposta em ordem cresencete
+#
+#	Photography 13776535.278375827
+#	Webseries 17754841.20121909
+#	Indie Rock 18869296.158468843
